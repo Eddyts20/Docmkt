@@ -366,12 +366,12 @@
 
   <script>
     // Cole aqui a URL gerada pelo Google Apps Script (que termina com /exec)
-    const GOOGLE_SCRIPT_URL = "SUA_URL_DO_APPS_SCRIPT_AQUI";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwAU7iYtbMNyAAPksX4Li_4STXxLmQc_yaXTzwNqjK5oCriIUngWjljd0-KGwcAe1_-tQ/exec";
 
     function enviarFormulario(e) {
       e.preventDefault();
 
-      if (GOOGLE_SCRIPT_URL === "SUA_URL_DO_APPS_SCRIPT_AQUI" || !GOOGLE_SCRIPT_URL.startsWith("https://script.google.com")) {
+      if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbwAU7iYtbMNyAAPksX4Li_4STXxLmQc_yaXTzwNqjK5oCriIUngWjljd0-KGwcAe1_-tQ/exec" || !GOOGLE_SCRIPT_URL.startsWith("https://script.google.com")) {
         alert("Atenção: Você precisa colar a URL do Google Apps Script na variável GOOGLE_SCRIPT_URL no código.");
         return;
       }
